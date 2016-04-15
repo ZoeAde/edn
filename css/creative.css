@@ -455,3 +455,8 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #222;
 }
+
+
+@media screen and (min-width: 0px) and (max-width: 720px) {
+  .mobile-hide{ display: none; }
+}
