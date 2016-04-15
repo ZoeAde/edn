@@ -2,12 +2,7 @@ html,
 body {
     width: 100%;
     height: 100%;
-    background-image: url(../img/greenfield.png);
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    color: #333;
 }
 
 body {
@@ -45,6 +40,7 @@ h4,
 h5,
 h6 {
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    color: #333;
 }
 
 p {
@@ -56,6 +52,12 @@ p {
 .bg-primary {
     background-color: #fff;
     color:black;
+    background-image: url(../img/greenfield.png);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 .bg-dark {
@@ -235,6 +237,10 @@ header .header-content .header-content-inner p {
     }
 }
 
+.landing-title {
+    color: white;
+}
+
 /*IN THE NEWS SECTION*/
 #news {
     /*background: white;*/
@@ -261,7 +267,7 @@ header .header-content .header-content-inner p {
 }
 
 .garden-img {
-    max-height: 500px;
+    max-height: 450px;
 }
 
 
