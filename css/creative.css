@@ -253,9 +253,12 @@ header .header-content .header-content-inner p {
     width: auto;
 }
 
+
 /*WALLGARDEN SECTION*/
 #wallgarden {
     color: black;
+    width: 100%;
+    height: 100%;
 }
 
 .wallgarden-intro {
@@ -270,8 +273,20 @@ header .header-content .header-content-inner p {
     max-height: 450px;
 }
 
+@media screen and (min-width: 0px) and (max-width: 720px) {
+  .garden-img {
+    max-width: 220px;
+    }
+}
 
-/*SOFTWARE SECTION*/
+/*CTA SECTION*/
+.typing-header {
+    font-size: 30px;
+    color: white;
+}
+
+
+/*SOFTWARE SECTION
 .section-heading {
     margin-top: 0;
 }
@@ -299,12 +314,13 @@ header .header-content .header-content-inner p {
 .call-to-action h2 {
     margin: 0 auto 20px;
 }
+
 /*CONTACT SECTION*/
-#contact {
+/*#contact {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
+*/
 .email-link {
     color: #333;
 }
