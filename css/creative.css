@@ -193,7 +193,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/greenfield.png);
+    background-image: url(../img/edn-wall-garden-web-clip-frame-1.png);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -345,6 +345,9 @@ header .header-content .header-content-inner p {
     margin: 0 auto 20px;
 }
 
+.app-img {
+    max-width: 100%;
+}
 /*Footer SECTION*/
 .global-footer {
     background: #343031;
