@@ -122,7 +122,7 @@
     <section class="section-padding" id="software">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-xs-12 text-center">
                     <h2 class="section-heading">Introducing the WallGarden</h2>
                     <hr class="primary">
                 </div>
@@ -205,12 +205,12 @@
                 </div>
                 <div class="col-md-4 text-center phone-icon-block">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-leaf wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <i class="fa fa-4x fa-leaf wow bounceIn text-primary" data-wow-delay=".2s"></i>
                         <h3>Vitamins</h3>
                         <p class="text-muted">Plants need food also. The WallGarden serves up all natural plant food like nitrogen, phosphate, etc.. into the water system where it is absorbed by the plants.</p>
                     </div>
                     <div class="service-box">
-                        <i class="fa fa-4x fa-dashboard wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <i class="fa fa-4x fa-dashboard wow bounceIn text-primary" data-wow-delay=".2s"></i>
                         <h3>Temperature</h3>
                         <p class="text-muted">Plants can be very sentitive to changing weather. With our temperature control feature, you can make sure that your plants are always in their ideal environment.</p>
                     </div>
@@ -219,7 +219,7 @@
         </div>
     </section>
 
-    <section id="news" class="bg-news">
+<!--     <section id="news" class="bg-news">
         <div class="container">
             <div class="row text-center img-responsive">
                 <div class="col-xs-3">
@@ -236,27 +236,43 @@
                 </div>
             </div>
         </div>
-    </section>
-<!--
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Contact Us</h2>
-                    <hr class="primary">
-                    <p>Questions or comments? Send us an email and we will get back to you as soon as possible!</p>
-                </div>
-                <div class="col-lg-3 col-lg-offset-3 text-center">
-                    <i class="fa fa-phone fa-3x wow bounceIn contact-icons"></i>
-                    <p>303.775.4213</p>
-                </div>
-                <div class="col-lg-3 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn contact-icons" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:your-email@your-domain.com" class="email-link">info@edntech.com</a></p>
-                </div>
-            </div>
-        </div>
     </section> -->
+
+    <footer class="global-footer">
+      <div>
+        <nav>
+          <a class="page-scroll" href="#page-top"><img class="footer-logo" src="img/logo.png"></a>
+          </a>
+          <br>
+          <a class="footer-links" href="/contact">Contact</a>
+          <a class="footer-links" href="/opportunities">Opportunities</a>
+          <a class="footer-links" href="/privacy-policy">Privacy Policy</a>
+        </nav>
+
+        <div class="social">
+          <a href="https://twitter.com/GroveLabs" class="fa fa-twitter"></a>
+          <a href="https://youtube.com/user/grovelabs" class="fa fa-youtube"></a>
+          <a href="https://facebook.com/GroveLabs" class="fa fa-facebook"></a>
+          <a href="https://instagram.com/grove_labs" class="fa fa-instagram"></a>
+        </div>
+<!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup email-signup">
+            <form action="//edntech.us8.list-manage.com/subscribe/post?u=80d5b573d23af99910eb70bea&amp;id=ec09ee9097" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <!-- <div id="mc_embed_signup_scroll"> -->
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_80d5b573d23af99910eb70bea_ec09ee9097" tabindex="-1" value=""></div>
+
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+            </form>
+        </div>
+
+<!--End mc_embed_signup-->
+
+
+
+      </div>
+    </footer>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -266,7 +282,7 @@
     <script>
       $(function(){
           $(".typing").typed({
-            strings: ["parsley", "strawberries", "basil^800", "rosemary", "lettuce", "daisies"],
+            strings: ["parsley", "strawberries", "basil", "rosemary", "lettuce", "daisies"],
             stringsElement: null,
             // typing speed
             typeSpeed: 80,
