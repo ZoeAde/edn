@@ -369,32 +369,6 @@ header .header-content .header-content-inner p {
 .social>a {
     padding-left: 5px;
     padding-right: 5px;
-
-}
-
-.email-signup {
-    margin-top: 5px;
-    font-size: 14px;
-}
-
-.email-signup .email {
-    width: 130px;
-}
-
-.email-signup .button {
-    background: rgb(255, 180, 110);
-    color: white;
-    border: none;
-    border-radius: 1px;
-    padding-top: 3.5px;
-    padding-bottom: 3.5px;
-    padding-left: 8px;
-    padding-right: 8px;
-    text-transform: uppercase;
-}
-
-.email-signup .button:hover {
-    background: rgba(255, 180, 110, 0.7);
 }
 
 .text-primary {
@@ -562,6 +536,18 @@ body {
 }
 
 /*FORM*/
-.input {/*
-    border: none;*/
+.email-header {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.email-form {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.email-button {
+    background: rgb(255, 180, 110);
 }
