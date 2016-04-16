@@ -369,30 +369,29 @@ header .header-content .header-content-inner p {
 
 }
 
-.email-link {
-    color: #333;
+.email-signup {
+    margin-top: 5px;
+    font-size: 14px;
 }
 
-.email-signup>form {
-    display: inline-block;
-        margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+.email-signup .email {
+    width: 130px;
 }
 
-.mc-embedded-subscribe {
-    font-size: .8rem;
-    border-top: 2px solid #FC8620;
-    margin-bottom: 0;
+.email-signup .button {
+    background: rgb(255, 180, 110);
+    color: white;
+    border: none;
+    border-radius: 1px;
+    padding-top: 3.5px;
+    padding-bottom: 3.5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-transform: uppercase;
 }
 
-.email-capture .cta-button {
-    font-size: .8rem;
-    border-top: 2px solid #FC8620;
-    margin-bottom: 0;
+.email-signup .button:hover {
+    background: rgba(255, 180, 110, 0.7);
 }
 
 .text-primary {
@@ -551,7 +550,15 @@ body {
     webkit-tap-highlight-color: #222;
 }
 
+@media screen and (min-width: 721px) {
+  .mobile-only { display: none; }
+}
 
 @media screen and (min-width: 0px) and (max-width: 720px) {
-  .mobile-hide{ display: none; }
+  .mobile-hide { display: none; }
+}
+
+/*FORM*/
+.input {/*
+    border: none;*/
 }
