@@ -35,7 +35,7 @@
             </div>
             <div class="navbar-header pull-right">
                 <button class="btn button buy-btn">
-                    <a class="nav-buy-btn" href="#">BUY NOW</a>
+                    <a class="nav-buy-btn orderButton" href="#">BUY NOW</a>
                 </button>
 
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -64,7 +64,7 @@
                 <h1 class="landing-title">Sinfully Fresh Produce</h1>
                 <hr>
                 <p>Automated growing × Beautiful Design</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Buy Now</a>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll orderButton">Buy Now</a>
             </div>
         </div>
     </header>
@@ -169,7 +169,7 @@
                 <div class="call-to-action">
                     <h2 class="typing-header">I want to grow my own <strong><span class="typing"><strong></h2>
                     <br>
-                    <a href="#" class="btn btn-primary btn-xl wow tada">Buy Now</a>
+                    <a href="#" class="btn btn-primary btn-xl orderButton">Buy Now</a>
                 </div>
             </div>
         </aside>
@@ -189,13 +189,13 @@
             <div class="row">
                 <div class="col-md-4 text-center phone-icon-block mobile-hide">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-tint wow bounceIn text-primary"></i>
+                        <i class="fa fa-4x fa-tint wow fadeIn text-primary"></i>
                         <h3 class="software-title">Water</h3>
                         <p class="text-muted software-description">Each shelf is a reservoir of water that holds the roots of the plants while oxygen is pumped into the water to keep the plants oxygenated.</p>
                     </div>
                     <br>
                     <div class="service-box">
-                        <i class="fa fa-4x fa-lightbulb-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <i class="fa fa-4x fa-lightbulb-o wow fadeIn text-primary" data-wow-delay=".2s"></i>
                         <h3 class="software-title">Light</h3>
                         <p class="text-muted software-description">We replicate the Sun on a much smaller scale. The LED lights provide a full spectrum of light to the plants, enough for them to grow strong and healthy.</p>
                     </div>
@@ -205,25 +205,25 @@
                 </div>
                 <div class="col-md-4 text-center phone-icon-block mobile-only">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-tint wow bounceIn text-primary"></i>
+                        <i class="fa fa-4x fa-tint wow fadeIn text-primary"></i>
                         <h3 class="software-title">Water</h3>
                         <p class="text-muted software-description">Each shelf is a reservoir of water that holds the roots of the plants while oxygen is pumped into the water to keep the plants oxygenated.</p>
                     </div>
                     <br>
                     <div class="service-box">
-                        <i class="fa fa-4x fa-lightbulb-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <i class="fa fa-4x fa-lightbulb-o wow fadeIn text-primary" data-wow-delay=".2s"></i>
                         <h3 class="software-title">Light</h3>
                         <p class="text-muted software-description">We replicate the Sun on a much smaller scale. The LED lights provide a full spectrum of light to the plants, enough for them to grow strong and healthy.</p>
                     </div>
                 </div>
                 <div class="col-md-4 text-center phone-icon-block">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-leaf wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <i class="fa fa-4x fa-leaf wow fadeIn text-primary" data-wow-delay=".2s"></i>
                         <h3 class="software-title">Vitamins</h3>
                         <p class="text-muted software-description">Plants need food also. The WallGarden serves up all natural plant food like nitrogen, phosphate, etc.. into the water system where it is absorbed by the plants.</p>
                     </div>
                     <div class="service-box">
-                        <i class="fa fa-4x fa-dashboard wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <i class="fa fa-4x fa-dashboard wow fadeIn text-primary" data-wow-delay=".2s"></i>
                         <h3 class="software-title">Temperature</h3>
                         <p class="text-muted software-description">Plants can be very sentitive to changing weather. With our temperature control feature, you can make sure that your plants are always in their ideal environment.</p>
                     </div>
@@ -326,7 +326,36 @@
 
 
 
+    <!-- Stripe Integration -->
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+    <script>
+      var handler = StripeCheckout.configure({
+        key: 'pk_test_Ll4INBvl91mfNfbX40m3aUD5',
+        image: '/img/logo.png',
+        locale: 'auto',
+        shippingAddress: true,
+        email: true,
+        token: function(token) {
+          // Use the token to create the charge with a server-side script.
+          // You can access the token ID with `token.id`
+        }
+  });
 
+  $('.orderButton').on('click', function(e) {
+    // Open Checkout with further options
+    handler.open({
+      name: 'ēdn',
+      description: '2 widgets',
+      amount: 59900
+    });
+    e.preventDefault();
+  });
+
+  // Close Checkout on page navigation
+  $(window).on('popstate', function() {
+    handler.close();
+  });
+</script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
