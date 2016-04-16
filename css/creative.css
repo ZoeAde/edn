@@ -157,24 +157,33 @@ aside {
     border: none;
 }
 
-
 /*Creates space between li's and BUY NOW btn*/
 .nav {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
-a.navbar-brand.nav-buy-btn {
-   margin-left: 12px;
-   margin-right: 4px;
-   padding-left: 10px;
-   padding-right: 10px;
-   background-color: rgb(255, 180, 110);
-   color: white;
+.buy-btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 180, 110);
+    text-align: center;
 }
 
-a.navbar-brand.nav-buy-btn:hover, a.navbar-brand.nav-buy-btn:focus, a.navbar-brand.nav-buy-btn:active {
-   background-color: rgba(255, 180, 110, 0.6);
+.buy-btn:hover, .buy-btn:active, .buy-btn:focus {
+   background-color: rgba(255, 180, 110, 0.7);
+}
+
+.nav-buy-btn {
    color: white;
+   font-weight: normal;
+   font-size: 14px;
+   margin: 0;
+   padding: 0;
+}
+
+.nav-buy-btn:hover, .nav-buy-btn:focus, .nav-buy-btn:active {
+   color: white;
+   text-decoration: none;
 }
 
 
@@ -402,6 +411,7 @@ header .header-content .header-content-inner p {
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
+    font-weight: normal;
 }
 
 .btn-default:hover,
@@ -455,6 +465,7 @@ fieldset[disabled] .btn-default.active {
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
+    font-weight: normal;
 }
 
 .btn-primary:hover,
@@ -507,6 +518,7 @@ fieldset[disabled] .btn-primary.active {
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
+    font-weight: normal;
 }
 
 .btn-xl {
