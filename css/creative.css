@@ -234,34 +234,6 @@ header .header-content .header-content-inner h4 {
     color: rgba(255,255,255,.7);
 }
 
-@media(min-width:768px) {
-    header {
-        min-height: 100%;
-    }
-
-    header .header-content {
-        position: absolute;
-        top: 50%;
-        padding: 0 50px;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-    }
-
-    header .header-content .header-content-inner {
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 1000px;
-    }
-
-    header .header-content .header-content-inner p {
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 80%;
-        font-size: 18px;
-    }
-}
-
 .landing-title {
     color: white;
 }
@@ -280,15 +252,38 @@ video#bg-video {
   overflow: hidden;
 }
 
-/*@media (max-width: 767px) {
-  video#bg-video {
-    background: url('img/edn-wall-garden-web-clip-frame-1.png') center center / cover no-repeat;
-  }
+/*Hiding video content on small screens*/
+@media (max-width: 767px) {
 
   video#bg-video {
     display: none;
   }
-}*/
+
+    header {
+        position: relative;
+        width: 100%;
+        min-height: auto;
+        text-align: center;
+        color: #fff;
+        background-image: url(../img/edn-wall-garden-web-clip-frame-1.png);
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+
+    header .header-content {
+        position: relative;
+        width: 100%;
+        padding: 100px 15px;
+        text-align: center;
+    }
+
+
+
+
+}
 
 
 
@@ -348,6 +343,10 @@ video#bg-video {
 .typing-header {
     font-size: 30px;
     color: white;
+}
+
+.typing {
+    color: rgb(255, 180, 110);
 }
 
 
@@ -573,11 +572,6 @@ body {
 }
 
 /*FORM*/
-.email-header {
-    padding-top: 20px;
-    padding-bottom: 10px;
-}
-
 .email-form {
     padding-left: 80px;
     padding-right: 80px;
