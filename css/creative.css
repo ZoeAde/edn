@@ -626,6 +626,10 @@ body {
     background-color:rgba(255,255,255,.2);
 }
 
+.dark-navbar .navbar-toggle {
+    color: red;
+}
+
 @media(min-width:768px) {
 
     .dark-navbar .nav > li>a,
