@@ -66,7 +66,7 @@ p {
 
 .bg-dark {
     color: #fff;
-    background-color: #222;
+    background: #343031;
 }
 
 .text-faded {
@@ -105,7 +105,6 @@ aside {
 .navbar-default .nav>li>a:focus {
     text-transform: uppercase;
     font-size: 13px;
-    font-weight: 700;
     color: #222;
 }
 
@@ -576,10 +575,19 @@ body {
 }
 
 /*FORM*/
+#signup {
+    margin-top: -20px;
+    padding: 5px;
+}
+
+.email-header {
+    color: #fff;
+}
+
 .email-form {
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-bottom: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
     text-align: center;
 }
 
@@ -615,7 +623,6 @@ body {
 .dark-navbar .nav>li>a:focus {
     text-transform: uppercase;
     font-size: 13px;
-    font-weight: 700;
     color: #222;
 }
 
