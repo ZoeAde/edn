@@ -8,19 +8,19 @@ app.use(express.static(path.join(__dirname, '/')));
 
 app.get('/',function(req,res){
   res.sendFile('index.html',{'root':__dirname});
-})
+});
 
 app.get('/faq', function(req,res){
   res.sendFile('faq.html',{'root':__dirname});
-})
+});
 
 app.get('/product',function(req,res){
   res.sendFile('product.html',{'root':__dirname});
-})
+});
 
 app.get('/privacy', function(req,res){
   res.sendFile('privacy-policy.html',{'root':__dirname});
-})
+});
 
 app.get('/register', function(req,res){
 stripe.customers.create({
@@ -32,12 +32,12 @@ stripe.customers.create({
     customer: customer.id
   });
 }).then(function(charge) {
-  console.log(charge)
+  console.log(charge);
 }).catch(function(err) {
-  console.log(err)
+  console.log(err);
 });
-})
+});
 
 app.listen('3000',function(){
-  console.log('Server running at http://localhost:3000 !!')
-})
+  console.log('Server running at http://localhost:3000 !!');
+});
