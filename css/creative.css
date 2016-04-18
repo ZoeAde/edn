@@ -317,8 +317,24 @@ video#bg-video {
     padding-bottom: 20px;
 }
 
+
 .garden-img {
     display: inline!important;
+    max-height: 480px;
+}
+
+.garden-description-div {
+    margin-top: 50px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .garden-img-div {
+        width: 100%;
+    }
+
+    .garden-description-div {
+       width: 100%;
+    }
 }
 
 .garden-title {
