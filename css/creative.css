@@ -594,10 +594,11 @@ body {
 #signup {
     margin-top: -20px;
     padding: 5px;
+    background: rgb(231, 231, 231);
 }
 
 .email-header {
-    color: #fff;
+    color: #222;
 }
 
 .email-form {
