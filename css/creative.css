@@ -268,7 +268,7 @@ video#bg-video {
         min-height: auto;
         text-align: center;
         color: #fff;
-        background-image: url(../img/edn-wall-garden-web-clip-frame-1.png);
+        background-image: url(../img/edn-wall-garden-web-clip-frame-2.png);
         background-position: center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -282,10 +282,6 @@ video#bg-video {
         padding: 100px 15px;
         text-align: center;
     }
-
-
-
-
 }
 
 
