@@ -50,7 +50,7 @@ p {
 }
 
 .bg-primary {
-    background-color: #fff;
+    /*background-color: #fff;*/
     color:black;
     background-image: url(../img/greenfield.png);
     background-position: center;
@@ -355,6 +355,12 @@ video#bg-video {
 }
 
 /*CTA SECTION*/
+.typing-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
 .typing-header {
     font-size: 30px;
     color: white;

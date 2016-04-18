@@ -53,7 +53,7 @@
                         <a class="page-scroll" href="#wallgarden">WallGarden</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="product.html">Product Details</a>
+                        <a class="page-scroll" href="/product">Product Details</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#software">Software</a>
@@ -82,7 +82,7 @@
 <!-- EMAIL SIGNUP SECTION -->
     <section id="signup" class="bg-dark">
         <h3 class="text-center email-header">Learn More</h3>
-        <div class="email-form">
+        <div class="email-form row">
             <form action="//edntech.us8.list-manage.com/subscribe/post?u=80d5b573d23af99910eb70bea&amp;id=ec09ee9097" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline validate" target="_blank" novalidate>
               <div class="form-group mc-field-group">
                 <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME" placeholder="First Name">
@@ -91,6 +91,7 @@
                 <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Email">
               </div>
               <input type="submit" value="Subscribe" name="Submit" id="mc-embedded-subscribe" class="button btn btn-primary">
+
             </form>
         </div>
     </section>
@@ -136,8 +137,8 @@
         </div>
     </section>
 
-    <section id="signup">
-        <aside class="bg-primary">
+    <section id="typing" class="typing-section bg-primary">
+        <!-- <aside class="bg-primary"> -->
             <div class="container text-center">
                 <div class="call-to-action">
                     <h2 class="typing-header">I want to grow my own <span class="typing"></h2>
@@ -145,7 +146,7 @@
                     <a href="#" class="btn btn-primary btn-xl orderButton">Buy Now</a>
                 </div>
             </div>
-        </aside>
+        <!-- </aside> -->
     </section>
 
 <!-- SOFTWARE SECTION -->
@@ -293,7 +294,7 @@
     <script>
       var handler = StripeCheckout.configure({
         key: 'pk_test_Ll4INBvl91mfNfbX40m3aUD5',
-        image: '/img/logo.png',
+        image: 'img/logo.png',
         locale: 'auto',
         shippingAddress: true,
         email: true,
