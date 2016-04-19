@@ -17,10 +17,6 @@ hr {
     border-width: 3px;
 }
 
-hr.light {
-    border-color: #fff;
-}
-
 a {
     color: rgb(33, 206, 153);
     -webkit-transition: all .35s;
