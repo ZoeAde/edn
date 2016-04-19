@@ -595,6 +595,10 @@ body {
 
 .email-header {
     color: #222;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    margin-right: .7rem;
 }
 
 .email-form {
@@ -602,6 +606,12 @@ body {
     padding-right: 100px;
     padding-bottom: 20px;
     text-align: center;
+    display: block;
+}
+
+.email-form input {
+    margin-bottom: 2px;
+    margin-top: 2px;
 }
 
 .email-button {
